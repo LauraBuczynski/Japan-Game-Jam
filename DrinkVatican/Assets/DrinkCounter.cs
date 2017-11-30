@@ -21,6 +21,16 @@ public class DrinkCounter : MonoBehaviour {
 
     }
 
+    public void PlusDrinkCount()
+    {
+        m_drinkCount++;
+    }
+
+    public void PlusGiftCount()
+    {
+        m_giftCount++;
+    }
+
     public int GetDrinkCount()
     {
         return m_drinkCount;

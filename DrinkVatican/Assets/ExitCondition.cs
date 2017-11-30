@@ -22,12 +22,18 @@ public class ExitCondition : MonoBehaviour {
         }
 	}
 
-    void Win()
+    public void Win()
     {
-        m_IsWin = true;
+        if (!m_IsLose)
+        {
+            m_IsWin = true;
+        }
     }
-    void Lose()
+    public void Lose()
     {
-        m_IsLose = true;
+        if (!m_IsWin)
+        {
+            m_IsLose = true;
+        }
     }
 }

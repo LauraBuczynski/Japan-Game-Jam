@@ -9,6 +9,18 @@ public class Drink : MonoBehaviour {
 	}
 
 	void Update (){
-
+        
 	}
+
+    //void Drink()
+    //Do not bacome aconstructor
+    public void DoDrink()
+    {
+        GetComponent<DrinkCounter>().PlusDrinkCount();
+    }
+
+    public void Gift()
+    {
+        GetComponent<DrinkCounter>().PlusGiftCount();
+    }
 }
