@@ -27,7 +27,7 @@ public class GuardChaseState : State<Guard>
 		Vector3 dir = m_seeControl.GetPlayer().transform.position - obj.transform.position;
 		dir.Normalize();
 
-		SimpleMove.SimpleMoving(obj.gameObject, m_rb, dir * obj.MAX_SPEED);
+		SimpleMove.SimpleMoving(obj.gameObject, m_rb, dir * obj.CHASE_SPEED);
 
 		if (!m_seeControl.IsLook()){
 			//状態切替

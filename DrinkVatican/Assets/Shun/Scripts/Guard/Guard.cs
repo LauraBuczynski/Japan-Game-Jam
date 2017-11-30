@@ -10,11 +10,20 @@ public enum GUARD_STATE
 
 public class Guard : StateObjectBase<Guard, GUARD_STATE>
 {
+	//移動の最大速度
 	[SerializeField]
 	private float m_maxSpd = 2.0f;
 
 	public float MAX_SPEED{
 		get { return m_maxSpd; }
+	}
+
+	//追跡時の速度
+	[SerializeField]
+	private float m_chaseSpd = 4.0f;
+	public float CHASE_SPEED
+	{
+		get { return m_chaseSpd; }
 	}
 
 	protected override void Start () {

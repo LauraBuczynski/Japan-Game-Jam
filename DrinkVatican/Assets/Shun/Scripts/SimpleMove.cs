@@ -30,7 +30,7 @@ public class SimpleMove : MonoBehaviour
 	{
 		Vector3 velocity;
 
-		if (Random.Range(0, 19) < 2)//20% to not move
+		if (Random.Range(0, 100) <= 20)//20% to not move
 		{
 			velocity = Vector3.zero;
 		}
